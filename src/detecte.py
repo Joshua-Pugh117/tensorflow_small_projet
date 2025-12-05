@@ -15,7 +15,7 @@ def load_model(model_url = data['model_url']):
         exit()
     return detector
 
-def dectect(detector, input_tensor):
+def detect(detector, input_tensor):
     print("Running RCNN object detection...")
     detector_output = detector(input_tensor)
 
